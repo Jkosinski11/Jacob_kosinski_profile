@@ -1,187 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jacob Kosinski | Experience & Projects</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #f8fafc;
-        --surface: #ffffff;
-        --text: #1f2937;
-        --muted: #4b5563;
-        --accent: #1d4ed8;
-        --border: #e5e7eb;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6;
-        color: var(--text);
-        background: var(--bg);
-      }
-
-      header {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-        background: var(--surface);
-        border-bottom: 1px solid var(--border);
-      }
-
-      .container {
-        max-width: 900px;
-        margin: 0 auto;
-        padding: 0 1rem;
-      }
-
-      .header-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
-        padding: 0.75rem 0;
-      }
-
-      nav a {
-        margin-left: 0.75rem;
-        color: var(--accent);
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      nav a:hover,
-      a:hover {
-        text-decoration: underline;
-      }
-
-      main {
-        padding: 2rem 0 3rem;
-      }
-
-      section {
-        margin-bottom: 2rem;
-      }
-
-      .card {
-        background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: 1rem 1.25rem;
-        margin-bottom: 0.9rem;
-      }
-
-      h1,
-      h2,
-      h3 {
-        line-height: 1.3;
-        margin-top: 0;
-      }
-
-      h1 {
-        margin-bottom: 0.25rem;
-      }
-
-      .subtitle {
-        color: var(--muted);
-        margin-top: 0;
-      }
-
-      ul {
-        margin: 0.5rem 0 0;
-        padding-left: 1.25rem;
-      }
-
-      .project-links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem 0.75rem;
-      }
-
-      .project-links a {
-        color: var(--accent);
-      }
-
-      footer {
-        border-top: 1px solid var(--border);
-        padding: 1rem 0 2rem;
-        color: var(--muted);
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="container header-inner">
-        <strong>Jacob Kosinski</strong>
-        <nav aria-label="Section navigation">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#github">GitHub</a>
-        </nav>
-      </div>
-    </header>
-
-    <main class="container">
-      <section id="about">
-        <h1>Experience & Projects</h1>
-        <p class="subtitle">
-          Public profile page with a quick overview of professional experience and selected work.
-        </p>
-      </section>
-
-      <section id="experience" aria-labelledby="experience-title">
-        <h2 id="experience-title">Experience</h2>
-
-        <article class="card">
-          <h3>Professional Experience</h3>
-          <ul>
-            <li>Built and supported software solutions using modern web technologies.</li>
-            <li>Worked with teams to deliver reliable, user-focused features.</li>
-            <li>Improved maintainability through clear documentation and code quality practices.</li>
-          </ul>
-        </article>
-      </section>
-
-      <section id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title">Projects</h2>
-
-        <article class="card">
-          <h3>Portfolio and Application Projects</h3>
-          <p>Selected applications available through GitHub:</p>
-          <div class="project-links">
-            <a href="https://github.com/Jkosinski11" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
-            <a href="https://github.com/Jkosinski11/Jacob_kosinski_profile" target="_blank" rel="noopener noreferrer">This Profile Repository</a>
-          </div>
-        </article>
-      </section>
-
-      <section id="github" aria-labelledby="github-title">
-        <h2 id="github-title">GitHub Access</h2>
-        <div class="card">
-          <p>
-            Employers can browse source code and projects directly on GitHub via the links above.
-          </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob Kosinski | Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="profile-page">
+    <section class="profile-card">
+      <div class="banner"></div>
+      <div class="profile-main">
+        <div class="headshot-container">
+          <img src="https://via.placeholder.com/220x220.png?text=Headshot" alt="Headshot placeholder" class="headshot">
         </div>
-      </section>
-    </main>
+        <div class="profile-heading">
+          <h1>Jacob Kosinski</h1>
+          <p class="headline">Computer Engineering Student | Researcher | Developer</p>
+          <p class="location">United States</p>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <div class="container">© <span id="year"></span> Jacob Kosinski</div>
-    </footer>
+    <section class="content-grid">
+      <article class="panel">
+        <h2>Resume Information</h2>
+        <p class="panel-intro">Fill out your profile details below.</p>
+        <form class="resume-form">
+          <label for="full-name">Full Name</label>
+          <input id="full-name" type="text" placeholder="Enter your full name">
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+          <label for="current-role">Current Role</label>
+          <input id="current-role" type="text" placeholder="Ex: Undergraduate Research Assistant">
+
+          <label for="education">Education</label>
+          <input id="education" type="text" placeholder="Ex: B.S. Computer Engineering, XYZ University">
+
+          <label for="experience">Experience Summary</label>
+          <textarea id="experience" rows="4" placeholder="Briefly describe your relevant experience"></textarea>
+
+          <label for="skills">Skills</label>
+          <textarea id="skills" rows="3" placeholder="Ex: Python, C++, Embedded Systems, Data Analysis"></textarea>
+        </form>
+      </article>
+
+      <article class="panel">
+        <h2>Research Paper</h2>
+        <p class="panel-intro">Add a direct link to your published work.</p>
+        <label for="paper-link">Research Paper URL</label>
+        <input id="paper-link" type="url" placeholder="https://example.com/research-paper">
+        <a class="resource-link" href="#" aria-label="Research paper link placeholder">Open Research Paper</a>
+      </article>
+
+      <article class="panel">
+        <h2>Projects</h2>
+        <p class="panel-intro">Share links to your key projects.</p>
+        <label for="project-one">Project 1 URL</label>
+        <input id="project-one" type="url" placeholder="https://github.com/username/project-one">
+
+        <label for="project-two">Project 2 URL</label>
+        <input id="project-two" type="url" placeholder="https://github.com/username/project-two">
+
+        <label for="project-three">Project 3 URL</label>
+        <input id="project-three" type="url" placeholder="https://github.com/username/project-three">
+      </article>
+    </section>
+  </main>
+</body>
 </html>

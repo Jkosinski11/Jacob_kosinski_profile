@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f5f7;
+  color: #1f2328;
+}
+
+.profile-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  margin-bottom: 1.5rem;
+}
+
+.banner {
+  height: 170px;
+  background: linear-gradient(120deg, #0a66c2, #3d8fe0);
+}
+
+.profile-main {
+  padding: 0 1.25rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-top: -70px;
+}
+
+.headshot-container {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.headshot {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+}
+
+.profile-heading h1 {
+  margin: 0;
+}
+
+.headline {
+  margin: 0.35rem 0;
+  font-weight: 600;
+}
+
+.location {
+  margin: 0;
+  color: #586069;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 3px 12px rgba(15, 23, 42, 0.06);
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.panel-intro {
+  margin-top: 0;
+  color: #586069;
+}
+
+label {
+  display: block;
+  margin-top: 0.75rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #d0d7de;
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.7rem;
+  font: inherit;
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.resource-link {
+  display: inline-block;
+  margin-top: 0.9rem;
+  color: #0a66c2;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resource-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .profile-main {
+    margin-top: -60px;
+  }
+
+  .headshot {
+    width: 110px;
+    height: 110px;
+  }
+}
