@@ -7,63 +7,192 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header class="top-nav">
+    <div class="nav-inner">
+      <p class="nav-brand">Jacob Kosinski</p>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="profile-page">
-    <section class="profile-card">
-      <div class="banner"></div>
-      <div class="profile-main">
+    <section class="hero" id="about">
+      <div class="hero-backdrop"></div>
+      <div class="hero-main">
         <div class="headshot-container">
-          <img src="https://via.placeholder.com/220x220.png?text=Headshot" alt="Headshot placeholder" class="headshot">
+          <img src="proffesional_headshot.jpg" alt="Jacob Kosinski headshot" class="headshot">
         </div>
-        <div class="profile-heading">
+        <div class="hero-copy">
           <h1>Jacob Kosinski</h1>
-          <p class="headline">Computer Engineering Student | Researcher | Developer</p>
-          <p class="location">United States</p>
+          <p class="headline">Computer Scientist | Data Scientist | Cyber Security Engineer | Machine Learning Researcher | Software Developer</p>
+          <p class="location">Columbus, Ohio, United States</p>
+          <div class="hero-actions">
+            <a class="action-btn primary" href="#projects">View Projects</a>
+            <a class="action-btn ghost" href="#contact">Contact</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="content-grid">
-      <article class="panel">
-        <h2>Resume Information</h2>
-        <p class="panel-intro">Fill out your profile details below.</p>
-        <form class="resume-form">
-          <label for="full-name">Full Name</label>
-          <input id="full-name" type="text" placeholder="Enter your full name">
+    <section class="bento" id="work">
+      <article class="card card-about">
+        <h2>About</h2>
+        <p>I'm a Computer Science graduate from West Virginia University with experience in software engineering, machine learning, computer vision, cybersecurity, and data science.
 
-          <label for="current-role">Current Role</label>
-          <input id="current-role" type="text" placeholder="Ex: Undergraduate Research Assistant">
+I've worked on everything from full-stack web applications to GPU-accelerated machine learning pipelines. As an undergraduate researcher, I developed computer vision systems for healthcare applications, using technologies such as Python, PyTorch, computer vision, pose estimation, and GPU computing to analyze human movement and detect falls. During my software engineering internship at AVN Corporation, I developed cloud-based applications and Python data pipelines for processing and analyzing LLM output.
 
-          <label for="education">Education</label>
-          <input id="education" type="text" placeholder="Ex: B.S. Computer Engineering, XYZ University">
+Outside of professional and research work, I enjoy building projects that combine software and data to solve real-world problems—from autonomous robotics and financial applications to sports analytics and machine learning.
 
-          <label for="experience">Experience Summary</label>
-          <textarea id="experience" rows="4" placeholder="Briefly describe your relevant experience"></textarea>
-
-          <label for="skills">Skills</label>
-          <textarea id="skills" rows="3" placeholder="Ex: Python, C++, Embedded Systems, Data Analysis"></textarea>
-        </form>
+I'm passionate about building useful technology, learning new systems, and turning ideas into working software.</p>
       </article>
 
-      <article class="panel">
-        <h2>Research Paper</h2>
-        <p class="panel-intro">Add a direct link to your published work.</p>
-        <label for="paper-link">Research Paper URL</label>
-        <input id="paper-link" type="url" placeholder="https://example.com/research-paper">
-        <a class="resource-link" href="#" aria-label="Research paper link placeholder">Open Research Paper</a>
+      <article class="card card-skills">
+        <h2>Core Skills</h2>
+        <ul class="chip-list">
+          <li>Python</li>
+          <li>Machine Learning</li>
+          <li>Cyber Security</li>
+          <li>Computer Vision</li>
+          <li>Java</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+          <li>NoSQL</li>
+          <li>R</li>
+          <li>Bash</li>
+          <li>Linux</li>
+          <li>Git</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
+          <li>Data Analysis</li>
+          <li>C++</li>
+          <li>C</li>
+          <li>Robotics</li>
+        </ul>
       </article>
 
-      <article class="panel">
-        <h2>Projects</h2>
-        <p class="panel-intro">Share links to your key projects.</p>
-        <label for="project-one">Project 1 URL</label>
-        <input id="project-one" type="url" placeholder="https://github.com/username/project-one">
-
-        <label for="project-two">Project 2 URL</label>
-        <input id="project-two" type="url" placeholder="https://github.com/username/project-two">
-
-        <label for="project-three">Project 3 URL</label>
-        <input id="project-three" type="url" placeholder="https://github.com/username/project-three">
+      <article class="card card-paper">
+        <h2>Research</h2>
+        <p class="card-intro">Developed an end-to-end computer vision and deep learning pipeline for automated fall detection in healthcare environments, using human pose and motion representations rather than relying solely on raw video. The project integrated human segmentation, motion transfer, keypoint extraction, and temporal deep learning models to capture and classify complex human movements. I designed and evaluated both supervised and unsupervised approaches, including experiments focused on generalization to unseen subjects and out-of-distribution movements. This research demonstrated how compact keypoint-based representations can reduce the computational dependence on full-frame video while maintaining strong performance for real-world activity and fall classification.</p>
+        <a class="resource-link" href="https://arxiv.org/abs/2607.15400" aria-label="Research paper link placeholder">Open Research Paper</a>
       </article>
+
+      <article class="card card-timeline">
+        <h2>Experience Timeline</h2>
+        <ol class="timeline">
+          <li>
+            <p class="time">May 2025 - May 2026</p>
+            <p class="company-name">West Virginia University</p>
+            <p class="company-location">Morgantown, West Virginia</p>
+            <p class="event">Undergraduate researcher in computer vision and machine learning.</p>
+          </li>
+          <li>
+            <p class="time">May 2024 - August 2024</p>
+            <p class="company-name">AVN Corporation</p>
+            <p class="company-location">Morgantown, West Virginia</p>
+            <p class="event">Software Development Intern</p>
+          </li>
+          <li>
+            <p class="time">2019 - 2023</p>
+            <p class="company-name">Steelhead Custom Landscaping</p>
+            <p class="company-location">Anchorage, Alaska</p>
+            <p class="event">Groundskeeper | Manager</p>
+          </li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>iLa Learning</h3>
+          <p>Built a full-stack investing education platform designed to help users learn investing concepts through an interactive web experience. The application provides secure user authentication, personalized user data, and a scalable backend for managing learning and investing-related features.</p>
+          <h5>Tech Stack:</h5>
+          <ul class="chip-list">
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>Rest APIs</li>
+            <li>Firebase Authentication</li>
+          </ul>
+          <a class="resource-link" href="https://ila-learning.onrender.com/" aria-label="Project one link placeholder">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Jacobs Clothing</h3>
+          <p>Ecommerce platform for a simulated clothing store, featuring a modern design and seamless user experience.</p>
+          <h5>Tech Stack:</h5>
+          <ul class="chip-list">
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+            <li>Redux</li>
+            <li>JavaScript</li>
+            <li>Firebase Authentication</li>
+          </ul>
+          <a class="resource-link" href="https://github.com/Jkosinski11/jacobsclothing" aria-label="Project two link placeholder">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Text World AI</h3>
+          <p>Created an AI agent that plays text world, a text-based adventure game. The agent was trained to navigate the game world and make decisions based on its environment.</p>
+          <h5>Tech Stack:</h5>
+          <ul class="chip-list">
+            <li>Python</li>
+            <li>Spacy</li>
+            <li>Scikit-learn</li>
+          </ul>
+          <a class="resource-link" href="https://github.com/Jkosinski11/CS-493_project2/tree/main" aria-label="Project three link placeholder">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Daily Doodles</h3>
+          <p>A daily drawing app that allows users to create and share their artwork with the community.</p>
+          <h5>Tech Stack:</h5>
+          <ul class="chip-list">
+            <li>React.js</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <a class="resource-link" href="https://github.com/WVU-CS230-2023-08-Group02/Daily-Doodles" aria-label="Project three link placeholder">View Project</a> 
+          </ul>
+        </article>
+        <article class="project-card">
+          <h3>MPX</h3>
+          <p>Operating system that has dynamic memory allocation and automated resource management.</p>
+          <h5>Tech Stack:</h5>
+          <ul class="chip-list">
+            <li>C</li>
+            <li>Assembly</li>
+          </ul>
+          <a class="resource-link" href="https://github.com/WVU-CS450/Tech_Titans" aria-label="Project three link placeholder">View Project</a>
+        </article>
+        <article class="project-card">
+          <h3>Trading Card App</h3>
+          <p>User run trading card app that lets user post delete and manage their collection. Uses Restful API.</p>
+          <h5>Tech Stack:</h5>
+          <ul class="chip-list">
+            <li>React.js</li>
+            <li>JavaScript</li>
+            <li>Restful API</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <a class="resource-link" href="https://github.com/Jkosinski11/Trading_card_app" aria-label="Project three link placeholder">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for any inquiries or opportunities.</p>
+      <a class="action-btn primary" href="mailto:kosinski.jacob11@gmail.com">Email Jacob</a>
     </section>
   </main>
 </body>
